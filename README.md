@@ -34,3 +34,9 @@ This project implements an **FX option pricer** using the **Garman-Kohlhagen mod
    ```bash
    git clone https://github.com/Sylvain-Topeza/FX_Option_Pricing.git
    cd FX_Option_Pricing
+2. Install dependencies:  
+   ```bash
+   pip install -r requirements.txt
+3. Run the project:  
+   ```bash
+   python main.py
