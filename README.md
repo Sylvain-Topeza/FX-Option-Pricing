@@ -76,14 +76,27 @@ The project collects the following market data:
 
 ## 🖥️ Installation & Setup   
 1️⃣ **Clone the repository**  
-    ```bash
-   git clone https://github.com/Sylvain-Topeza/FX_Option_Pricing.git
-   cd FX-Option-Pricing
+```bash
+git clone https://github.com/Sylvain-Topeza/FX_Option_Pricing.git
+cd FX-Option-Pricing
 
 2️⃣ **Install dependencies**  
-     ```bash
-   pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
 
 3️⃣ **Run the project**  
-     ```bash
-   python main.py
+```bash
+python main.py
+
+
+---
+
+### **📌 Requirements**
+```md
+## **🔧 Requirements**  
+- Python 3.8+  
+- Required libraries:  
+```bash
+pip install numpy pandas scipy matplotlib yfinance pandas_datareader
+
+
