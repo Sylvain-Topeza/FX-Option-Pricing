@@ -16,6 +16,7 @@ $$C = S e^{-qT} N(d_1) - K e^{-rT} N(d_2)$$
 $$P = K e^{-rT} N(-d_2) - S e^{-qT} N(-d_1)$$  
 
 Where:  
+
 $$d_1 = \frac{\ln(S/K) + (r - q + \sigma^2 / 2)T}{\sigma \sqrt{T}}$$  
 $$d_2 = d_1 - \sigma \sqrt{T}$$  
 
@@ -42,8 +43,6 @@ The project collects the following market data:
 ✅ **Risk-free interest rates** (EUR & USD) from FRED  
 ✅ **Volatility estimation** (using a 20-day rolling window)  
 
----
-
 ### **Step 2: FX Option Pricing (Garman-Kohlhagen Model)**  
 - The model computes **Call and Put prices** using real interest rates and market volatility.  
 - Pricing results depend on key parameters:  
@@ -54,13 +53,9 @@ The project collects the following market data:
   - **Foreign interest rate (q)**  
   - **Volatility (σ)**  
 
----
-
 ### **Step 3: Implied Volatility Calculation**  
 - The script finds the volatility **σ** that matches the market price using a root-finding algorithm.  
 - This allows for **extracting market expectations** regarding future volatility.  
-
----
 
 ### **Step 4: Delta Hedging Backtest**  
 - We **simulate** a trader dynamically adjusting their hedge **each day**.  
@@ -86,14 +81,17 @@ The project collects the following market data:
 ```bash
   git clone https://github.com/Sylvain-Topeza/FX_Option_Pricing.git
   cd FX-Option-Pricing
+```
 
 2️⃣ **Install dependencies**  
 ```bash
   pip install -r requirements.txt
+```
 
 3️⃣ **Run the project**  
 ```bash
   python main.py
+```
 
 
 ---
@@ -105,5 +103,6 @@ The project collects the following market data:
 - Required libraries:  
 ```bash
 pip install numpy pandas scipy matplotlib yfinance pandas_datareader
+```
 
 
