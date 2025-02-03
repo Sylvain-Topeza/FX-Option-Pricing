@@ -8,20 +8,27 @@ It also includes an **implied volatility calculator** and a **delta hedging back
 ---
 
 ## ⚙️ Features  
-### **1️⃣ FX Option Pricing (Garman-Kohlhagen Model)**  
+### 1️⃣ FX Option Pricing (Garman-Kohlhagen Model)  
 - Computes **Call and Put prices** for FX options using market inputs (spot price, interest rates, and volatility).  
 - Uses the **Garman-Kohlhagen formula**, which extends Black-Scholes for foreign exchange options:  
 
-### **2️⃣ Implied Volatility Calculation**  
-- Uses **numerical root-finding (Newton-Raphson method)** to estimate the implied volatility from market option prices.  
-- Extracts **market expectations** on future price movements.
+$$C = S e^{-qT} N(d_1) - K e^{-rT} N(d_2)$$  
+$$P = K e^{-rT} N(-d_2) - S e^{-qT} N(-d_1)$$  
 
-### **3️⃣ Delta Hedging Strategy Backtest**  
+Where:  
+$$d_1 = \frac{\ln(S/K) + (r - q + \sigma^2 / 2)T}{\sigma \sqrt{T}}$$  
+$$d_2 = d_1 - \sigma \sqrt{T}$$  
+
+### 2️⃣ Implied Volatility Calculation  
+- Uses **numerical root-finding (Newton-Raphson method)** to estimate the implied volatility from market option prices.  
+- Extracts **market expectations** on future price movements.  
+
+### 3️⃣ Delta Hedging Strategy Backtest  
 - Simulates a **delta hedging strategy** over a given time period.  
 - Adjusts the hedge **daily** to remain delta-neutral.  
-- Computes and visualizes **PnL evolution** throughout the hedging period.
+- Computes and visualizes **PnL evolution** throughout the hedging period.  
 
-### **4️⃣ Real Market Data Integration**  
+### 4️⃣ Real Market Data Integration  
 - Fetches **FX spot rates** (EUR/USD) using Yahoo Finance.  
 - Retrieves **interest rates** (EUR & USD) from FRED.  
 - Calculates **historical volatility** from real price fluctuations.
@@ -77,16 +84,16 @@ The project collects the following market data:
 ## 🖥️ Installation & Setup   
 1️⃣ **Clone the repository**  
 ```bash
-git clone https://github.com/Sylvain-Topeza/FX_Option_Pricing.git
-cd FX-Option-Pricing
+  git clone https://github.com/Sylvain-Topeza/FX_Option_Pricing.git
+  cd FX-Option-Pricing
 
 2️⃣ **Install dependencies**  
 ```bash
-pip install -r requirements.txt
+  pip install -r requirements.txt
 
 3️⃣ **Run the project**  
 ```bash
-python main.py
+  python main.py
 
 
 ---
