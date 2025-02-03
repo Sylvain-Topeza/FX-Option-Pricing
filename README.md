@@ -76,14 +76,14 @@ The project collects the following market data:
 
 ## 🖥️ Installation & Setup   
 1️⃣ **Clone the repository**  
-```bash
+    ```bash
    git clone https://github.com/Sylvain-Topeza/FX_Option_Pricing.git
    cd FX-Option-Pricing
 
 2️⃣ **Install dependencies**  
-   ```bash
+     ```bash
    pip install -r requirements.txt
 
-3️⃣ R**un the project**  
-   ```bash
+3️⃣ **Run the project**  
+     ```bash
    python main.py
