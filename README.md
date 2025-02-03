@@ -76,6 +76,16 @@ The project collects the following market data:
 
 ---
 
+## 📂 Data Source & Customization  
+
+The dataset (`fx_data.csv`) provided is an **example dataset** containing historical FX market data of EUR/USD from 2022.  
+However, users can generate their own dataset by running the data import script with custom parameters (FX pair, data period, interest rate sources):
+
+```bash
+  python data_import.py
+```
+
+
 ## 🖥️ Installation & Setup   
 1️⃣ **Clone the repository**  
 ```bash
