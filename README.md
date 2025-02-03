@@ -32,5 +32,5 @@ This project implements an **FX option pricer** using the **Garman-Kohlhagen mod
 ## 🖥️ Installation & Setup  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/FX_Option_Pricing_Delta_Hedging.git
-   cd FX_Option_Pricing_Delta_Hedging
+   git clone https://github.com/Sylvain-Topeza/FX_Option_Pricing.git
+   cd FX_Option_Pricing
