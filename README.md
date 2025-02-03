@@ -84,25 +84,14 @@ The project collects the following market data:
 ```
 
 2️⃣ **Install dependencies**  
+This project requires Python 3.8+ and the following libraries:
 ```bash
-  pip install -r requirements.txt
+  pip install numpy pandas matplotlib scipy yfinance pandas_datareader tk
 ```
 
 3️⃣ **Run the project**  
 ```bash
   python main.py
-```
-
-
----
-
-### **📌 Requirements**
-```md
-## **🔧 Requirements**  
-- Python 3.8+  
-- Required libraries:  
-```bash
-pip install numpy pandas scipy matplotlib yfinance pandas_datareader
 ```
 
 
