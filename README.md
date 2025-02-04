@@ -108,11 +108,12 @@ However, users can generate their own dataset by running the data import script 
 ---
 
 ## 🖥️ Installation & Setup
-```md
+
 1️⃣ **Clone the repository**  
 ```bash
   git clone https://github.com/Sylvain-Topeza/FX_Option_Pricing.git
   cd FX-Option-Pricing
+```
 
 2️⃣ **Install dependencies**  
 
