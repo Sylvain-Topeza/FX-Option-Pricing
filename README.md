@@ -65,14 +65,35 @@ The project collects the following market data:
 ---
 
 ## **🔍 Example Results**
-### **1️⃣ Sample Option Pricing Output**
 
+Here are the results of the FX option pricing and delta hedging strategy for different maturities.  
+📌 **Note:** The **implied volatility and delta hedging PnL are computed only for the Call option**.  
+The Put option is **only priced** using the Garman-Kohlhagen model.
 
-### **2️⃣ Delta Hedging Performance (PnL)**
+---
 
+### **1️⃣ Input Parameters**
+![Input Parameters](results/input_parameters_180d.png)  
 
-### **3️⃣ PnL Chart**
-![PNL Evolution](example_pnl_chart.png)
+- **Spot Price:** `1.122965`
+- **Strike Price:** `1.12`
+- **Initial Volatility:** `0.066473`
+- **Interest Rates:** Retrieved from dataset
+
+### **2️⃣ Pricing & Implied Volatility**
+![Option Prices and Implied Vol](results/output_pricing_vol_180d.png)  
+
+This step computes:
+- The **Call and Put option prices** using the **Garman-Kohlhagen model**.
+- **Implied Volatility (for the Call only)**, found via numerical root-finding.
+
+### **3️⃣ PnL of Delta Hedging Strategy (Call Option Only)**
+
+![PnL 180 Days](results/pnl_hedging_180d.png)  
+
+- **Delta hedge is adjusted daily over 180 days.**
+- **PnL fluctuations remain small, proving that the delta hedge is effective.**  
+- **The hedging strategy adapts to market movements over time, reducing risk exposure.**  
 
 ---
 
