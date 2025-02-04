@@ -70,8 +70,6 @@ Here are the results of the FX option pricing and delta hedging strategy for dif
 📌 **Note:** The **implied volatility and delta hedging PnL are computed only for the Call option**.  
 The Put option is **only priced** using the Garman-Kohlhagen model.
 
----
-
 ### **1️⃣ Input Parameters**
 ![Input Parameters](results/input_parameters_180d.png)  
 
@@ -106,6 +104,7 @@ However, users can generate their own dataset by running the data import script 
   python data_import.py
 ```
 
+---
 
 ## 🖥️ Installation & Setup   
 1️⃣ **Clone the repository**  
